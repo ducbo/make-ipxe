@@ -44,11 +44,11 @@ echo Attempting chainload of duc.pw...
 goto menu || goto failsafe
 
 :menu
-set conn_type https
-chain --autofree https://boot.duc.pw/menu.ipxe || echo ${HTTPS_ERR}
-sleep 5
 set conn_type http
 chain --autofree http://boot.duc.pw/menu.ipxe || echo ${HTTP_ERR}
+sleep 5
+set conn_type https
+chain --autofree https://boot.duc.pw/menu.ipxe || echo ${HTTPS_ERR}
 goto localboot
 
 :localboot
