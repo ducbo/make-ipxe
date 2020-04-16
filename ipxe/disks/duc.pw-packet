@@ -6,9 +6,9 @@ set fg_gre ${esc:string}[32m
 set fg_red ${esc:string}[31m
 set fg_cya ${esc:string}[36m
 set fg_whi ${esc:string}[37m
-set HTTPS_ERR HTTPS appears to have failed... attempting HTTP
-set HTTP_ERR HTTP has failed, localbooting...
-set version 10.0
+set HTTP_ERR HTTP appears to have failed... attempting HTTPS
+set HTTPS_ERR HTTPS has failed, localbooting...
+set version 10.x
 set ipxe_cloud_config packet
 
 :start
