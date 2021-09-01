@@ -55,8 +55,8 @@ goto boottype
 
 :bootos_images
 imgfree
-kernel http://${centos_mirror}/${dir}/images/pxeboot/vmlinuz repo=${repo} ${params} ${console} BOOTIF=${netX/mac} ip=dhcp initrd=initrd.img
-initrd http://${centos_mirror}/${dir}/images/pxeboot/initrd.img
+kernel http://vault.centos.org/centos/6.10/os/x86_64/images/pxeboot/vmlinuz repo=${repo} ${params} ${console} BOOTIF=${netX/mac} ip=dhcp initrd=initrd.img
+initrd http://vault.centos.org/centos/6.10/os/x86_64/images/pxeboot/initrd.img
 iseq ${img_sigs_enabled} true && goto verify_sigs || goto skip_sigs
 :verify_sigs
 echo
